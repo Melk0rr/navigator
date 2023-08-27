@@ -1,0 +1,45 @@
+@-moz-document url(about:blank),
+url(about:newtab),
+url(about:preferences),
+url(about:home),
+url(about:privatebrowsing){
+:root {
+  --newtab-background-color-secondary: #242D3B !important;
+  --in-content-page-background: #1A1D26 !important;
+}
+
+body {
+  background-color: #1A1D26 !important;
+}
+
+.logo {
+  height: 100px !important;
+  width: 100px !important;
+  background-image: url("librewolf_grad.svg") !important;
+  background-size: 100% !important;
+}
+
+.wordmark {
+  display: none !important;
+}
+
+.search-handoff-button {
+  border-radius: 50px !important;
+}
+
+search-textbox {
+  border-radius: 50px !important;
+  background-color: #242D3B !important;
+}
+}
+
+@-moz-document url(about:blank),
+url(about:newtab),
+url(about:home){
+body {
+  background-image: url(librewolf_nt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+}
