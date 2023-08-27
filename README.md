@@ -2,7 +2,7 @@
 Personal stylesheet theme for LibreWolf
 
 # Installation
-- Enable the option toolkit.legacyUserProfileCustomizations.stylesheets from your about:config or user.js file.
+- Enable the option **toolkit.legacyUserProfileCustomizations.stylesheets** from your about:config or user.js file.
 - Open profile folder (about:support), create a "chrome" folder inside of it, and place the userChrome.css file inside.
 
 # Credits
