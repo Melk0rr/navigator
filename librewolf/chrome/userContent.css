@@ -38,3 +38,9 @@ body {
   background-repeat: no-repeat;
 }
 }
+
+@-moz-document url(about:blank){
+body {
+  height: 100%;
+}
+}
