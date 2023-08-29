@@ -4,13 +4,13 @@ url(about:preferences),
 url(about:home),
 url(about:privatebrowsing){
 :root {
-  --newtab-background-color-secondary: #001E36 !important;
-  --in-content-page-background: #001E36 !important;
-  --newtab-primary-action-background: #2baff2ff !important;
+  --newtab-background-color-secondary: #2E195A !important;
+  --in-content-page-background: #2E195A !important;
+  --newtab-primary-action-background: #ff7f12ff !important;
 }
 
 body {
-  background-color: #001E36 !important;
+  background-color: #2E195A !important;
 }
 
 .logo,
@@ -24,7 +24,7 @@ body {
 
 search-textbox {
   border-radius: 50px !important;
-  background-color: var(--in-content-page-background) !important;
+  background-color: #411F8D !important;
 }
 }
 
@@ -32,7 +32,7 @@ search-textbox {
 url(about:newtab),
 url(about:home){
 body {
-  background-image: url("librewolf_wp.png");
+  background-image: url("firefox_wp.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

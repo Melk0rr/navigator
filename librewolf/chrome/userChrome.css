@@ -43,17 +43,26 @@ toolbar#nav-bar {
   border: none !important;
 }
 
+toolbarbutton:hover {
+  background-color: var(--button-hover-bgcolor) !important;
+}
+
 /*====== UI Settings ======*/
 
 :root {
   --navbarWidth: 650px;
-  --lwt-accent-color: #1A1D26 !important;
-  --toolbar-bgcolor: #242D3B !important;
-  --lwt-selected-tab-background-color: #242D3B !important;
-  --toolbarbutton-hover-background: #242D3B !important;
-  --urlbar-box-hover-bgcolor: #242D3B !important;
-  --button-hover-bgcolor: #242D3B !important;
-  --button-primary-hover-bgcolor: #242D3B !important;
+  --lwt-accent-color: #001E36 !important;
+  --toolbar-field-focus-background-color: #001E36 !important;
+  --button-active-bgcolor: #001E36 !important;
+  --button-hover-bgcolor: #001E36 !important;
+  --arrowpanel-background: #001E36 !important;
+  --tab-icon-overlay-stroke: #004F80 !important;
+  --toolbar-bgcolor: #004F80 !important;
+  --lwt-selected-tab-background-color: #004F80 !important;
+  --toolbarbutton-hover-background: #004F80 !important;
+  --urlbar-box-hover-bgcolor: #004F80 !important;
+  --button-primary-hover-bgcolor: #004F80 !important;
+  --focus-outline-color: #94e2feff !important;
 }
 
 /* If the window is wider than 1000px, use flex layout */
