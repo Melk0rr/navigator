@@ -7,6 +7,7 @@ url(about:privatebrowsing){
   --newtab-background-color-secondary: #2E195A !important;
   --in-content-page-background: #2E195A !important;
   --newtab-primary-action-background: #ff7f12ff !important;
+  --newtab-element-hover-color: #2E195A !important;
 }
 
 body {

@@ -47,6 +47,11 @@ toolbarbutton:hover {
   background-color: var(--button-hover-bgcolor) !important;
 }
 
+.findbar-textbox {
+  border-radius: 50px !important;
+  border: 1px solid transparent !important;
+}
+
 /*====== UI Settings ======*/
 
 :root {
@@ -56,6 +61,7 @@ toolbarbutton:hover {
   --button-active-bgcolor: #001E36 !important;
   --button-hover-bgcolor: #001E36 !important;
   --arrowpanel-background: #001E36 !important;
+  --input-bgcolor: #001E36 !important;
   --tab-icon-overlay-stroke: #004F80 !important;
   --toolbar-bgcolor: #004F80 !important;
   --lwt-selected-tab-background-color: #004F80 !important;
