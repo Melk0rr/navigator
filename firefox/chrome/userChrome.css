@@ -68,7 +68,9 @@ toolbarbutton:hover {
   --lwt-selected-tab-background-color: #411F8D !important;
   --toolbarbutton-hover-background: #411F8D !important;
   --urlbar-box-hover-bgcolor: #411F8D !important;
+  --button-bgcolor: #411F8D !important;
   --button-primary-hover-bgcolor: #411F8D !important;
+  --button-primary-color: white ! important;
   --button-primary-bgcolor: #ff7f12 !important;
   --button-primary-active-bgcolor: #ff7f12 !important;
   --focus-outline-color: #ff7f12 !important;
