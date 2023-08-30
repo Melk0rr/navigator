@@ -55,6 +55,7 @@ toolbarbutton:hover {
 /*====== UI Settings ======*/
 
 :root {
+  --navbarWidth: 650px;
   --lwt-accent-color: #2E195A !important;
   --toolbar-field-focus-background-color: #2E195A !important;
   --button-active-bgcolor: #2E195A !important;

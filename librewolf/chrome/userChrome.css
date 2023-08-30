@@ -62,12 +62,15 @@ toolbarbutton:hover {
   --button-hover-bgcolor: #001E36 !important;
   --arrowpanel-background: #001E36 !important;
   --input-bgcolor: #001E36 !important;
+  --checkbox-checked-hover-bgcolor: #001E36 !important;
   --tab-icon-overlay-stroke: #004F80 !important;
   --toolbar-bgcolor: #004F80 !important;
   --lwt-selected-tab-background-color: #004F80 !important;
   --toolbarbutton-hover-background: #004F80 !important;
   --urlbar-box-hover-bgcolor: #004F80 !important;
   --button-primary-hover-bgcolor: #004F80 !important;
+  --button-primary-bgcolor: #94e2feff !important;
+  --button-primary-active-bgcolor: #94e2feff !important;
   --focus-outline-color: #94e2feff !important;
 }
 
