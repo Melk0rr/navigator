@@ -52,6 +52,10 @@ toolbarbutton:hover {
   border: 1px solid transparent !important;
 }
 
+tree {
+  background-color: var(--arrowpanel-background) !important;
+}
+
 /*====== UI Settings ======*/
 
 :root {
@@ -68,6 +72,8 @@ toolbarbutton:hover {
   --lwt-selected-tab-background-color: #004F80 !important;
   --toolbarbutton-hover-background: #004F80 !important;
   --urlbar-box-hover-bgcolor: #004F80 !important;
+  --tabpanel-background-color: #004F80 !important;
+  --arrowpanel-background: #004F80 !important;
   --button-bgcolor: #004F80 !important;
   --button-primary-hover-bgcolor: #004F80 !important;
   --button-primary-color: white ! important;
