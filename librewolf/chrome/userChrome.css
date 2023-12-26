@@ -11,6 +11,34 @@
   }
 }
 
+:root {
+  --navbarWidth: 650px;
+  --lwt-accent-color: #001E36 !important;
+  --toolbar-field-focus-background-color: #001E36 !important;
+  --button-active-bgcolor: #001E36 !important;
+  --button-hover-bgcolor: #001E36 !important;
+  --input-bgcolor: #001E36 !important;
+  --checkbox-checked-hover-bgcolor: #001E36 !important;
+  --panel-background: #001E36 !important;
+  --tab-icon-overlay-stroke: #004F80 !important;
+  --toolbar-bgcolor: #004F80 !important;
+  --lwt-selected-tab-background-color: #004F80 !important;
+  --toolbarbutton-hover-background: #004F80 !important;
+  --urlbar-box-hover-bgcolor: #004F80 !important;
+  --tabpanel-background-color: #004F80 !important;
+  --tab-selected-bgcolor: #004F80 !important;
+  --arrowpanel-background: #004F80 !important;
+  --newtab-background-color: #004F80 !important;
+  --button-bgcolor: #004F80 !important;
+  --urlbarView-highlight-background: #004F80 !important;
+  --button-primary-hover-bgcolor: #004F80 !important;
+  --button-primary-color: white ! important;
+  --button-primary-bgcolor: #94e2feff !important;
+  --button-primary-active-bgcolor: #94e2feff !important;
+  --focus-outline-color: #94e2feff !important;
+  --arrowpanel-border-color: #94e2feff !important;
+}
+
 /*====== Aesthetics ======*/
 
 #navigator-toolbox {
@@ -56,31 +84,29 @@ tree {
   background-color: var(--arrowpanel-background) !important;
 }
 
+menu,
+menuitem {
+  &:where([_moz-menuactive]:not([disabled="true"])) {
+    background-color: var(--button-bgcolor) !important;
+  }
+
+  &:where([_moz-menuactive="true"][disabled="true"]) {
+    background-color: var(--button-bgcolor) !important;
+  }
+}
+
+.menupopup-arrowscrollbox {
+  background-color: var(--toolbar-field-focus-background-color) !important;
+}
+
+menupopup {
+  --panel-border-color: #94e2feff !important;
+}
+
 /*====== UI Settings ======*/
 
-:root {
-  --navbarWidth: 650px;
-  --lwt-accent-color: #001E36 !important;
-  --toolbar-field-focus-background-color: #001E36 !important;
-  --button-active-bgcolor: #001E36 !important;
-  --button-hover-bgcolor: #001E36 !important;
-  --arrowpanel-background: #001E36 !important;
-  --input-bgcolor: #001E36 !important;
-  --checkbox-checked-hover-bgcolor: #001E36 !important;
-  --tab-icon-overlay-stroke: #004F80 !important;
-  --toolbar-bgcolor: #004F80 !important;
-  --lwt-selected-tab-background-color: #004F80 !important;
-  --toolbarbutton-hover-background: #004F80 !important;
-  --urlbar-box-hover-bgcolor: #004F80 !important;
-  --tabpanel-background-color: #004F80 !important;
-  --tab-selected-bgcolor: #004F80 !important;
-  --arrowpanel-background: #004F80 !important;
-  --button-bgcolor: #004F80 !important;
-  --button-primary-hover-bgcolor: #004F80 !important;
-  --button-primary-color: white ! important;
-  --button-primary-bgcolor: #94e2feff !important;
-  --button-primary-active-bgcolor: #94e2feff !important;
-  --focus-outline-color: #94e2feff !important;
+.container.infobar {
+  background: var(---input-bgcolor) !important;
 }
 
 /* If the window is wider than 1000px, use flex layout */
