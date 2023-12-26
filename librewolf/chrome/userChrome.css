@@ -173,6 +173,8 @@ menupopup {
 #urlbar-go-button,
 /* Search URL magnifying glass */
 #alltabs-button,
+/* Firefox view button */
+#firefox-view-button,
 /* Menu to display all tabs at the end of tabs bar */
 .titlebar-buttonbox-container
 
@@ -193,6 +195,11 @@ menupopup {
 /* Fix URL bar overlapping elements */
 #urlbar-container {
   min-width: initial !important;
+}
+
+/* Remove border start before tabs */
+#tabbrowser-tabs {
+  border: none !important;
 }
 
 /* Remove gap after pinned tabs */
