@@ -19,7 +19,10 @@
   --button-hover-bgcolor: #2E195A !important;
   --input-bgcolor: #2E195A !important;
   --checkbox-checked-hover-bgcolor: #2E195A !important;
+  --checkbox-unchecked-hover-bgcolor: #2E195A !important;
   --panel-background: #2E195A !important;
+  --in-content-box-background: #2E195A !important;
+  --in-content-page-background: #411F8D !important;
   --tab-icon-overlay-stroke: #411F8D !important;
   --toolbar-bgcolor: #411F8D !important;
   --lwt-selected-tab-background-color: #411F8D !important;
