@@ -42,6 +42,10 @@
 
 /*====== Aesthetics ======*/
 
+* {
+  color-scheme: dark !important;
+}
+
 #navigator-toolbox {
   border-bottom: none !important;
 }

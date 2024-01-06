@@ -38,10 +38,15 @@
   --focus-outline-color: #ff7f12 !important;
   --arrowpanel-border-color: #ff7f12 !important;
   --panel-border-color: #ff7f12 !important;
-  --urlbarView-separator-color: #ff7f12 !important;
+  --urlbarView-separator-color: #de0e648c !important;
+  --panel-separator-color: #de0e648c !important;
 }
 
 /*====== Aesthetics ======*/
+
+* {
+  color-scheme: dark !important;
+}
 
 #navigator-toolbox {
   border-bottom: none !important;
