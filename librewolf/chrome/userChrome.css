@@ -23,6 +23,8 @@
   --panel-background: #001E36 !important;
   --in-content-box-background: #001E36 !important;
   --in-content-page-background: #004F80 !important;
+  --sidebar-background-color: #004F80 !important;
+  --lwt-sidebar-background-color: #004F80 !important;
   --tab-icon-overlay-stroke: #004F80 !important;
   --toolbar-bgcolor: #004F80 !important;
   --lwt-selected-tab-background-color: #004F80 !important;
@@ -40,7 +42,10 @@
   --button-primary-active-bgcolor: #94e2feff !important;
   --focus-outline-color: #94e2feff !important;
   --arrowpanel-border-color: #94e2feff !important;
-  --urlbarView-separator-color: #94e2feff !important;
+  --panel-border-color: #94e2feff !important;
+  --sidebar-border-color: #94e2feff !important;
+  --urlbarView-separator-color: #009BED !important;
+  --panel-separator-color: #009BED !important;
 }
 
 /*====== Aesthetics ======*/

@@ -23,6 +23,8 @@
   --panel-background: #2E195A !important;
   --in-content-box-background: #2E195A !important;
   --in-content-page-background: #411F8D !important;
+  --sidebar-background-color: #411F8D !important;
+  --lwt-sidebar-background-color: #411F8D !important;
   --tab-icon-overlay-stroke: #411F8D !important;
   --toolbar-bgcolor: #411F8D !important;
   --lwt-selected-tab-background-color: #411F8D !important;
@@ -41,6 +43,7 @@
   --focus-outline-color: #ff7f12 !important;
   --arrowpanel-border-color: #ff7f12 !important;
   --panel-border-color: #ff7f12 !important;
+  --sidebar-border-color: #ff7f12 !important;
   --urlbarView-separator-color: #de0e648c !important;
   --panel-separator-color: #de0e648c !important;
 }
