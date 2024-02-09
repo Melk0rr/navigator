@@ -45,10 +45,11 @@
   --panel-border-color: #3aa6ff !important;
   --sidebar-border-color: #3aa6ff !important;
   --autocomplete-popup-highlight-background: #3aa6ff !important;
-  --urlbarView-separator-color: #8562e9 !important;
-  --panel-separator-color: #8562e9 !important;
-  --tab-line-color: #8562e9 !important;
+  --panel-separator-color: #3aa6ff !important;
+  --toolbarbutton-icon-fill: #63e8ff !important;
+  --tab-line-color: #63e8ff !important;
   --lwt-tab-line-color: #8562e9 !important;
+  --urlbarView-separator-color: #8562e9 !important;
   --autocomplete-popup-separator-color: #8562e9 !important;
   --button-primary-color: white !important;
   --focus-outline-color: transparent !important;
@@ -81,13 +82,25 @@ toolbar#nav-bar {
   padding: 0 15px !important;
 }
 
+#urlbar[breakout] {
+  top: auto !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  top: 0 !important;
+}
+
 #urlbar-background {
   background: var(--lwt-accent-color) !important;
   border: none !important;
 }
 
+#urlbar[focused="true"] #urlbar-background {
+  border: 2px solid var(--toolbarbutton-icon-fill) !important;
+}
+
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-  height: 100% !important;
+  height: auto !important;
 }
 
 #urlbar-input-container {
@@ -101,7 +114,7 @@ toolbarbutton:hover {
 
 .findbar-textbox {
   border-radius: 50px !important;
-  border: 1px solid transparent !important;
+  border: 1px solid var(--tab-line-color) transparent !important;
 }
 
 tree {
