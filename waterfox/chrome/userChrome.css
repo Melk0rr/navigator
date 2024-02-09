@@ -35,6 +35,7 @@
   --arrowpanel-background: #2945c0 !important;
   --newtab-background-color: #2945c0 !important;
   --button-bgcolor: #2945c0 !important;
+  --autocomplete-popup-hover-background: #2945c0 !important;
   --urlbarView-highlight-background: #2945c0 !important;
   --button-primary-hover-bgcolor: #2945c0 !important;
   --button-primary-color: white !important;
@@ -44,10 +45,12 @@
   --arrowpanel-border-color: #3aa6ff !important;
   --panel-border-color: #3aa6ff !important;
   --sidebar-border-color: #3aa6ff !important;
+  --autocomplete-popup-highlight-background: #3aa6ff !important;
   --urlbarView-separator-color: #8562e9 !important;
   --panel-separator-color: #8562e9 !important;
   --tab-line-color: #8562e9 !important;
   --lwt-tab-line-color: #8562e9 !important;
+  --autocomplete-popup-separator-color: #8562e9 !important;
   --focus-outline-color: transparent !important;
 }
 
@@ -74,18 +77,22 @@ toolbar#nav-bar {
 /* Sets the URL bar color */
 #urlbar {
   background: var(--lwt-accent-color) !important;
-  top: auto !important;
+  /* top: auto !important; */
   padding: 0 15px !important;
 }
 
 #urlbar-background {
   background: var(--lwt-accent-color) !important;
   border: none !important;
-  border-radius: 50px !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: 100% !important;
 }
 
 #urlbar-input-container {
   border: none !important;
+  transition: .2s linear;
 }
 
 toolbarbutton:hover {
@@ -101,15 +108,37 @@ tree {
   background-color: var(--arrowpanel-background) !important;
 }
 
-menu,
-menuitem {
-  &:where([_moz-menuactive]:not([disabled="true"])) {
-    background-color: var(--button-bgcolor) !important;
-  }
+menu:where([_moz-menuactive="true"]:not([disabled="true"])),
+menu:where([_moz-menuactive="true"][disabled="true"]),
+menuitem:where([_moz-menuactive="true"]:not([disabled="true"])),
+menuitem:where([_moz-menuactive="true"][disabled="true"]) {
+  background-color: var(--button-bgcolor) !important;
+}
 
-  &:where([_moz-menuactive="true"][disabled="true"]) {
-    background-color: var(--button-bgcolor) !important;
-  }
+.menuitem-iconic {
+  border-radius: 3px;
+}
+
+#context-navigation,
+#context-navigation .menuitem-iconic {
+  justify-content: space-around !important;
+}
+
+#context-navigation > .menuitem-iconic:first-child, #context-navigation > .menuitem-iconic:last-child {
+  justify-content: space-around !important;
+}
+
+#context-navigation .menuitem-iconic {
+  width: auto !important;
+  flex: auto !important;
+}
+
+#context-navigation > .menuitem-iconic[_moz-menuactive="true"] > .menu-iconic-left > .menu-iconic-icon {
+  background-color: transparent !important;
+}
+
+.menu-iconic-left {
+  appearance: none !important;
 }
 
 .menupopup-arrowscrollbox {
@@ -120,9 +149,18 @@ menupopup {
   --panel-border-color: #3aa6ff !important;
 }
 
+menuseparator {
+  border-top: 1px solid var(--panel-separator-color) !important;
+}
+
 .tabbrowser-tab:is([selected], [multiselected]) .tab-context-line {
   --tab-line-color: #8562e9 !important;
   --lwt-tab-line-color: #8562e9 !important;
+}
+
+.bookmark-item {
+  margin: 0 !important;
+  border-radius: 0 !important;
 }
 
 /*====== UI Settings ======*/
