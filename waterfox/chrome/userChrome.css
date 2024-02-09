@@ -2,6 +2,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --lwt-accent-color: #1c1b22;
+    --in-content-page-background: #19177c !important;
   }
 }
 
@@ -22,7 +23,6 @@
   --checkbox-unchecked-hover-bgcolor: #19177c !important;
   --panel-background: #19177c !important;
   --in-content-box-background: #19177c !important;
-  --in-content-page-background: #2945c0 !important;
   --sidebar-background-color: #2945c0 !important;
   --lwt-sidebar-background-color: #2945c0 !important;
   --tab-icon-overlay-stroke: #2945c0 !important;
@@ -38,7 +38,6 @@
   --autocomplete-popup-hover-background: #2945c0 !important;
   --urlbarView-highlight-background: #2945c0 !important;
   --button-primary-hover-bgcolor: #2945c0 !important;
-  --button-primary-color: white !important;
   --button-primary-bgcolor: #3aa6ff !important;
   --button-primary-active-bgcolor: #3aa6ff !important;
   --focus-outline-color: #3aa6ff !important;
@@ -51,6 +50,7 @@
   --tab-line-color: #8562e9 !important;
   --lwt-tab-line-color: #8562e9 !important;
   --autocomplete-popup-separator-color: #8562e9 !important;
+  --button-primary-color: white !important;
   --focus-outline-color: transparent !important;
 }
 
@@ -161,6 +161,7 @@ menuseparator {
 .bookmark-item {
   margin: 0 !important;
   border-radius: 0 !important;
+  padding: 5px !important;
 }
 
 /*====== UI Settings ======*/

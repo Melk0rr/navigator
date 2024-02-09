@@ -2,47 +2,47 @@
 url(about:newtab),
 url(about:preferences),
 url(about:home),
-url(about:privatebrowsing){
-:root {
-  --newtab-background-color-secondary: #19177c !important;
-  --in-content-page-background: #19177c !important;
-  --newtab-primary-action-background: #8562e9 !important;
-  --newtab-element-hover-color: #19177c !important;
-}
+url(about:privatebrowsing) {
+  :root {
+    --newtab-background-color-secondary: #19177c !important;
+    --in-content-page-background: #19177c !important;
+    --newtab-element-hover-color: #19177c !important;
+    --newtab-primary-action-background: #8562e9 !important;
+  }
 
-body {
-  background-color: #19177c !important;
-}
+  body {
+    background-color: #19177c !important;
+  }
 
-.logo,
-.wordmark,
-#searchSubmit {
-  display: none !important;
-}
+  .logo,
+  .wordmark,
+  #searchSubmit {
+    display: none !important;
+  }
 
-.search-handoff-button {
-  border-radius: 50px !important;
-}
+  .search-handoff-button {
+    border-radius: 50px !important;
+  }
 
-#newtab-search-text,
-search-textbox {
-  border-radius: 50px !important;
-}
+  #newtab-search-text,
+  search-textbox {
+    border-radius: 50px !important;
+  }
 }
 
 @-moz-document url(about:blank),
 url(about:newtab),
-url(about:home){
-body {
-  background-image: url("waterfox_wp.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+url(about:home) {
+  body {
+    background-image: url("waterfox_wp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-@-moz-document url(about:blank){
-body {
-  height: 100%;
-}
+  @-moz-document url(about:blank){
+  body {
+    height: 100%;
+  }
 }
