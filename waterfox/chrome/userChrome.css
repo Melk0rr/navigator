@@ -48,7 +48,7 @@
   --panel-separator-color: #3aa6ff !important;
   --toolbarbutton-icon-fill: #63e8ff !important;
   --tab-line-color: #63e8ff !important;
-  --lwt-tab-line-color: #8562e9 !important;
+  --lwt-tab-line-color: #63e8ff !important;
   --urlbarView-separator-color: #8562e9 !important;
   --autocomplete-popup-separator-color: #8562e9 !important;
   --button-primary-color: white !important;
@@ -80,6 +80,7 @@ toolbar#nav-bar {
   background: var(--lwt-accent-color) !important;
   /* top: auto !important; */
   padding: 0 15px !important;
+  border-radius: 20px !important;
 }
 
 #urlbar[breakout] {
@@ -97,10 +98,16 @@ toolbar#nav-bar {
 
 #urlbar[focused="true"] #urlbar-background {
   border: 2px solid var(--toolbarbutton-icon-fill) !important;
+  border-radius: 50px !important;
+}
+
+#urlbar[breakout][breakout-extend] #urlbar-background {
+  border-radius: 20px !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
   height: auto !important;
+  padding-inline: 0 !important;
 }
 
 #urlbar-input-container {
@@ -110,6 +117,16 @@ toolbar#nav-bar {
 
 toolbarbutton:hover {
   background-color: var(--button-hover-bgcolor) !important;
+}
+
+.bookmark-item {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  padding: 5px 10px !important;
+}
+
+.icon {
+  fill: var(--toolbarbutton-icon-fill) !important;
 }
 
 .findbar-textbox {
@@ -156,25 +173,29 @@ menuitem:where([_moz-menuactive="true"][disabled="true"]) {
 
 .menupopup-arrowscrollbox {
   background-color: var(--toolbar-field-focus-background-color) !important;
+  padding: 10px !important;
 }
 
 menupopup {
-  --panel-border-color: #3aa6ff !important;
+  --panel-border-color: #63e8ff !important;
+}
+
+.menupopup-arrowscrollbox {
+  border-radius: 20px !important;
+  border: 2px solid var(--panel-border-color) !important;
 }
 
 menuseparator {
   border-top: 1px solid var(--panel-separator-color) !important;
 }
 
-.tabbrowser-tab:is([selected], [multiselected]) .tab-context-line {
-  --tab-line-color: #8562e9 !important;
-  --lwt-tab-line-color: #8562e9 !important;
+#TabsToolbar[brighttext] .tabbrowser-tab:hover:not([selected="true"], [multiselected]) > .tab-stack > .tab-background > .tab-context-line {
+  background-color: #63e8ff85 !important;
 }
 
-.bookmark-item {
-  margin: 0 !important;
-  border-radius: 0 !important;
-  padding: 5px !important;
+.tabbrowser-tab:is([selected], [multiselected]) .tab-context-line {
+  --tab-line-color: #63e8ff !important;
+  --lwt-tab-line-color: #63e8ff !important;
 }
 
 /*====== UI Settings ======*/
