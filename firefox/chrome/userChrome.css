@@ -40,10 +40,11 @@
   --button-primary-color: white !important;
   --button-primary-bgcolor: #ff7f12 !important;
   --button-primary-active-bgcolor: #ff7f12 !important;
-  --focus-outline-color: #ff7f12 !important;
   --arrowpanel-border-color: #ff7f12 !important;
   --panel-border-color: #ff7f12 !important;
   --sidebar-border-color: #ff7f12 !important;
+  --focus-outline-color: #E79819 !important;
+  --toolbar-field-focus-border-color: #E79819 !important;
   --urlbarView-separator-color: #de0e648c !important;
   --panel-separator-color: #de0e648c !important;
 }
