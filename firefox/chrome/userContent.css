@@ -23,6 +23,10 @@ body {
   border-radius: 50px !important;
 }
 
+.ds-top-sites {
+  margin-bottom: 85% !important;
+}
+
 search-textbox {
   border-radius: 50px !important;
   background-color: #411F8D !important;
